@@ -1,0 +1,30 @@
+footer{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #999;
+}
+
+/*optimal advanced styling*/
+@media(max-width:600px){
+    .container{
+        .width:95%;
+    }
+
+header h1{
+    font-size:2em;
+}
+
+.profile-picture img{ 
+    width:120px;
+    height: 120px;
+}
+
+.education h2, .interests h2{
+    font-size: 1.5em;
+}
+
+.education p, .interests ul{
+    font-size:1em;
+}
+}

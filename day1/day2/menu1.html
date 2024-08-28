@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu-styles.css">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2em;
+        }
+
+       .menu-section {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        } 
+
+        .menu-section h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Optional Advanced Styling */
+        .menu-item:hover {
+            background-color: #f9f9f9;
+        }
+
+        .menu-section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .menu-item i {
+            margin-right: 10px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Restaurant Name</h1>
+        </header>
+        <main>
+            <section class="menu-section">
+                <h2>Starters</h2>
+                <div class="menu-item">
+                    <span class="item-name">Bruschetta</span>
+                    <span class="item-price">£5.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Garlic Bread</span>
+                    <span class="item-price">£4.50</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Caprese Salad</span>
+                    <span class="item-price">£6.75</span>
+                </div>
+            </section>
+            <section class="menu-section">
+                <h2>Main Courses</h2>
+                <div class="menu-item">
+                    <span class="item-name">Margherita Pizza</span>
+                    <span class="item-price">£10.99</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Spaghetti Carbonara</span>
+                    <span class="item-price">£12.50</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Grilled Salmon</span>
+                    <span class="item-price">£15.00</span>
+                </div>
+            </section>
+            <section class="menu-section">
+                <h2>Desserts</h2>
+                <div class="menu-item">
+                    <span class="item-name">Tiramisu</span>
+                    <span class="item-price">£5.00</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Gelato</span>
+                    <span class="item-price">£4.50</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Panna Cotta</span>
+                    <span class="item-price">£5.50</span>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 Your Restaurant Name Menu</p>
+        </footer>
+    </div>
+</body>
+</html>

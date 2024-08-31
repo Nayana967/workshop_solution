@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #177a43;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #0e9a90;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .faq-item {
+            margin-bottom: 10px;
+        }
+        .faq-question {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+        }
+        .faq-answer.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer('answer1')">What is a Frequently Asked Question (FAQ) page?</div>
+            <div class="faq-answer" id="answer1">Frequently Asked Question (FAQ) pages (or informational hubs) enable your business to respond, react, and anticipate the needs of your audience more quickly and appropriately than other types of destination page experiences.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer('answer2')">Do I need a FAQ page?</div>
+            <div class="faq-answer" id="answer2">When you have a blog with a multitude of great content, an FAQ page is needed to educate customers about your product through those articles.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer('answer3')">What makes a good FAQ page?</div>
+            <div class="faq-answer" id="answer3">Frequently asked questions (FAQ) pages are a pillar of good customer experience. The best FAQ pages anticipate the needs of an audience</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(answerId) {
+            var answerElement = document.getElementById(answerId);
+            if (answerElement.classList.contains('show')) {
+                answerElement.classList.remove('show');
+            } else {
+                var allAnswers = document.querySelectorAll('.faq-answer');
+                allAnswers.forEach(function(answer) {
+                    answer.classList.remove('show');
+                });
+                answerElement.classList.add('show');
+            }
+        }
+    </script>
+</body>
+</html>
